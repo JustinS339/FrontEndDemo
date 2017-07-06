@@ -1,0 +1,146 @@
+<!doctype html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title> Test Page </title>
+		<link rel="stylesheet" type="text/css" href="layout.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	</head>
+	
+	<body>
+		<div id="navbar">
+			<div id="logo">
+				m<sup class="superscript">O2</sup>
+			</div>
+			
+			<table id="navTable">
+			  <tr>
+				<td><button class="trialBtn">Get free trial</button></td>
+				<td><button class="buyBtn threed">Buy now</button></td> 
+			  </tr>
+			</table>			
+		</div>
+		
+		<div id="title"> Share your Files with Ease </div>		
+		<div class="subtext"> We push ourselves to new levels of inspired excellence with each project and we sweat creativity.</div>
+		<button id="buyBtn2" class="threed"><div class="verticalLine">Buy now</div> &euro;23</button>
+
+		<div id="text2"> 
+			We push ourselves to new levels of inspired excellence with each project and we sweat creativity.
+			You won't see anything until we're done drooling at the result.
+		</div>
+		<button id="buyBtn3" class="threed">Buy now for &euro;23</button></br>
+		<hr>
+
+		<div id = "users">
+		
+			<div id = "centerStuff">
+				<div class="chevron left"></div>
+				<img id="userpic" src="userpic.jpg">
+				<img id="logopic" src="logo.png">
+				
+				<div id="userquote">
+					"Just started using awesome Module. Great way to boost the hard
+					designing or prototyping process. Also a perfect tool for creative
+					studios and freelancers."
+				</div>
+			
+				<div class="chevron right"></div>
+			</div>
+			<div id="username">Irina Bykova</div>
+			<div id="userinfo">Photographer, works with Slack team</div>
+		</div>
+
+		<div id="licenses">
+			<div class="header">Choose Your License</div>
+			
+			<div id="licenseTable">
+					<div class="licCard">
+						<div class="licHeader">Personal</div>
+						<div class="licInfo">
+							Just started using awesome Module.
+							Great way to boost the hard designing or prototyping process.
+						</div>
+						<hr>
+						<div id="free">Free</div>
+						<div class="billingInfo">
+							Per month billed annually or $250 from month to month
+						</div>
+						<button class="purchaseBtn">Get it</button>
+					</div>
+
+					
+					<div class="licCard2">
+						<div class="arrow-right"><button id="info">i</button></div>
+						<div class="licHeader">Agency</div>
+						<div class="licInfo">
+							Also a perfect tool for creative studios and freelancers
+						</div></br></br>
+						<hr>
+						<div class="price"><sup class="superscript2">$</sup>123</div>
+						<div class="billingInfo">
+							Per month billed annually or $250 from month to month
+						</div>
+						<button class="purchaseBtn">Buy now</button>
+					</div>
+
+					
+					<div class="licCard">
+						<div class="licHeader">Unlimited</div>
+						<div class="licInfo">
+							Living in today's metropolitan world of cellular phones, mobile computers
+						</div></br></br>
+						<hr>
+						<div class="price"><sup class="superscript2">$</sup>232</div>
+						<div class="billingInfo">
+							Per month billed annually or $250 from month to month
+						</div>
+						<button class="purchaseBtn">Buy now</button>
+					</div>
+			</div>	
+			
+		</div>
+		
+		<div id="join">
+			<div class="header">Become One of Us</div>
+			<div class="subtext" id="jointext">
+				Module 01 is big, stylish and 
+				handy UI Kit, full of many useful elements
+			</div>
+			<div class="radius">
+				<input type="text" id="emailBox" placeholder="E-mail address">
+				<button id="chat">Let's chat</button>
+			</div>
+		</div>
+		
+		<div id="bottom">
+			<img id="logopic2" src="logo2.png">
+			
+			<div class="center">
+				<div class="bottomtext">Apps</div>
+				<div class="bottomtext">Gadgets</div>
+				<div class="bottomtext">Science</div>
+				<div class="bottomtext">Nature</div>
+				<div class="bottomtext">Creative</div>
+			</div>
+			
+			<div id="copyright">&copy;2016 Great Simple</div>
+		</div>
+		
+		<script>
+			jQuery(window).scroll(function () {   
+				var scroll = jQuery(document).scrollTop();
+				if (scroll > 0) {
+					$("#navbar").addClass("active");
+				}
+				else {
+					$("#navbar").removeClass("active");
+				}
+			});
+			
+		</script>
+	</body>
+	
+</html>
